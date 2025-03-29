@@ -5,7 +5,11 @@
 header {
     background-color: black;
     padding: 10x;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
 }
+
 
 nav {
    text-align: end;

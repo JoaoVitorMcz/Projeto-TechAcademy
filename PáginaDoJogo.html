@@ -14,10 +14,16 @@
 <body>
 
     <header>
+        <div id="logo">
         <a href="PáginaDoJogo.html" title="Home">
             <img src="images/LogoJogo.jpg" alt="Logo" title="Logo">
         </a>
-        <nav>
+
+        </div>
+        <a href="javascript:mostrarMenu()" title="Menu" class="header-menu">
+            <i class="fas fa-bars"></i>
+        </a>
+        <nav class="header-nav">
             <ul>
                 <li><a href="Home">Home</a></li>
                 <li><a href="Quem Somos">Quem Somos</a></li>
@@ -27,7 +33,14 @@
             </ul>
         </nav>
     </header>
+    <script src="js/jquery-1.11.3.min.js"></script>
+    <script>
+        function mostrarMenu() {
+            // document.querySelector(".nav-menus")
+            $(".header-nav").toggle();
+        }
 
+    </script>
 
 </body>
 
