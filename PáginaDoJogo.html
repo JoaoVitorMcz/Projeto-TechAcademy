@@ -4,36 +4,55 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Página do Jogo</title>
+    <title>Speed Scarf</title>
     <link href="css/style.css" rel="stylesheet">
-    <meta charset="UTF-8">
+    <meta charset="UTF-8">  
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <title>Home Page</title>
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100..900;1,100..900&display=swap"
+        rel="stylesheet">
+
+    <link rel="shortcut icon" href="images/icone.png">
+    <link rel="stylesheet" href="css/all.min.css">
+    <link rel="stylesheet" href="css/aos.css">
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="shortcut icon" href="images/Dude_Monster.png">
+
 </head>
 
 <body>
 
-    <header>
-        <div id="logo">
-        <a href="PáginaDoJogo.html" title="Home">
+    <header class="header">
+        <div class="container">
+        <a href="PáginaDoJogo.html" title="Home" class="header-logo">
             <img src="images/LogoJogo.jpg" alt="Logo" title="Logo">
         </a>
-
         </div>
-        <a href="javascript:mostrarMenu()" title="Menu" class="header-menu">
-            <i class="fas fa-bars"></i>
-        </a>
         <nav class="header-nav">
             <ul>
                 <li><a href="Home">Home</a></li>
-                <li><a href="Quem Somos">Quem Somos</a></li>
+                <li><a href="Sobre">Sobre</a></li>
                 <li><a href="Contato">Contato</a></li>
                 <li><a href="Galeria de Imagens">Galeria</a></li>
                 <li class="btn"><a href="Jogar">Jogar</a></li>
             </ul>
         </nav>
     </header>
+<main>
+    <section>
+        <div>
+            <img src="images/Design sem nome (1).png" alt="Speed Scarf" class="background-image">
+            <div class="content">
+                <h1>Speed Scarf</h1>
+        </div>
+    </section>
+</main>
+
     <script src="js/jquery-1.11.3.min.js"></script>
+    <script src="js/aos.js"></script>
     <script>
         function mostrarMenu() {
             // document.querySelector(".nav-menus")
@@ -43,5 +62,13 @@
     </script>
 
 </body>
+<footer>
+    <p>
+        <img src="images/LogoJogo.jpg" alt="Logo">
+    </p>
+    <p>
+        Desenvolvido por João Vitor - Todos os direitos reservados
+    </p>
+</footer>
 
 </html>

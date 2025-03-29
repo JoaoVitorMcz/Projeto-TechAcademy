@@ -52,3 +52,26 @@ li {
     background-color: brown;
 }
 
+footer {
+    background-color: black;
+    padding: 20px;
+    p {
+        text-align: center;
+    }
+}
+
+body {
+    background-color: #ffffff;
+    color: white;
+    font-family: Arial;
+}
+
+main {
+    width: 1000px;
+    .background-image {
+        height: 100%;
+        width: 100%;
+        background-size: cover;
+        background-position: center;
+    }
+}
