@@ -8,6 +8,7 @@ header {
     display: flex;
     justify-content: space-around;
     align-items: center;
+    
 }
 
 
@@ -35,7 +36,6 @@ nav {
     li a:hover {
         color: red;
     }
-    
 }
 
 .btn {
