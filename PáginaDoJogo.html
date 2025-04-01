@@ -6,7 +6,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Speed Scarf</title>
     <link href="css/style.css" rel="stylesheet">
-    <meta charset="UTF-8">  
+    <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Home Page</title>
 
@@ -27,9 +27,9 @@
 
     <header class="header">
         <div class="container">
-        <a href="PáginaDoJogo.html" title="Home" class="header-logo">
-            <img src="images/LogoJogo.jpg" alt="Logo" title="Logo">
-        </a>
+            <a href="PáginaDoJogo.html" title="Home" class="header-logo">
+                <img src="images/LogoJogo.jpg" alt="Logo" title="Logo">
+            </a>
         </div>
         <nav class="header-nav">
             <ul>
@@ -41,28 +41,35 @@
             </ul>
         </nav>
     </header>
-<main>
-    <section>
-        <div>
-            <img src="images/Design sem nome (1).png" alt="Speed Scarf" class="background-image">
-            <div class="content">
-                <h1>Speed Scarf</h1>
-        </div>
-    </section>
-</main>
+    <main>
+        <section id="banner">
+            <div class="tabela">
+                <div class="coluna">
+                    <h1>Speed Scarf</h1>
+                    <p>Clique aqui para jogar</p>
+                    <p>
+                        <a href="Jogar" class="btn">Jogar</a>
+                    </p>
+                </div>
+                <div class="coluna">
+                    <img src="images/Background.png" alt="Banner" title="Banner">
+                </div>
+            </div>
+        </section>
 
-    <script src="js/jquery-1.11.3.min.js"></script>
-    <script src="js/aos.js"></script>
-    <script>
-        function mostrarMenu() {
-            // document.querySelector(".nav-menus")
-            $(".header-nav").toggle();
-        }
-
-    </script>
+        <section id="sobre">
+            <div>
+                <h2 class="barra">
+                    Sobre o Jogo
+                </h2>
+                <p id="sobre2">Speed Scarf é um jogo endless run onde você controla um Zippy que deve correr e pular
+                    para evitar obstáculos. O objetivo é alcançar a maior quantidade de pontos possivel.</p>
+            </div>
+        </section>
+    </main>
 
 </body>
-<footer>    
+<footer>
     <p>
         <img src="images/LogoJogo.jpg" alt="Logo">
     </p>
@@ -72,3 +79,13 @@
 </footer>
 
 </html>
+
+<script src="js/jquery-1.11.3.min.js"></script>
+<script src="js/aos.js"></script>
+<script>
+    function mostrarMenu() {
+        // document.querySelector(".nav-menus")
+        $(".header-nav").toggle();
+    }
+
+</script>
