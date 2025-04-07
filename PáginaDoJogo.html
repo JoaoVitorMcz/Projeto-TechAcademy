@@ -6,7 +6,6 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Speed Scarf</title>
     <link href="css/style.css" rel="stylesheet">
-    <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Home Page</title>
 
@@ -86,19 +85,42 @@
                 <h2 class="barra">
                     Contato
                 </h2>
+                <h1>Entre em contato</h1>
 
+                <form name="form">
+                    <label>Nome</label>
+                    <input type="text" id="nome" placeholder="Insira o Nome" required="required" name="nome" />
+                    <label>E-mail</label>
+                    <input type="email" id="email" placeholder="Digite seu E-mail" name="email" />
+                    <label>Telefone</label>
+                    <input type="text" id="telefone" placeholder="(xx)xx-xx-xx-xx" name="telefone" />
+                   <button type="button" id="botao">Enviar</button>
+                </form>
             </div>
         </section>
     </main>
 
 </body>
-<footer>
-    <p>
-        <img src="images/LogoJogo.jpg" alt="Logo">
-    </p>
-    <p>
-        Desenvolvido por João Vitor - Todos os direitos reservados
-    </p>
+<footer class="footer">
+    <div class="container">
+        <img src="images/LogoJogo.jpg" alt="Marvel">
+        <p>Todos os direitos reservados - Desenvolvido por João Vitor</p>
+        <hr>
+        <p>
+            <a href="https://github.com/JoaoVitorMcz" title="GitHub">
+                <i class="fab fa-github"> </i>
+            </a>
+
+
+            <a href="https://www.instagram.com/joaov.mcz/" target="_blank" title="Instagram">
+                <i class="fab fa-instagram"></i>
+            </a>
+
+            <a href="https://www.linkedin.com/in/joão-vitor-menezes-cortez-571363358/" title="Linkedin">
+                <i class="fab fa-linkedin"></i>
+            </a>
+        </p>
+    </div>
 </footer>
 
 </html>
@@ -112,3 +134,39 @@
     }
 
 </script>
+<script>
+    // Captura o botão pelo ID e adiciona um evento de clique
+    document.getElementById('botao').onclick = function() {
+        // Obtém o valor do campo "nome"
+        var nome = document.getElementById('nome').value;
+        // Obtém o valor do campo "email"
+        var email = document.getElementById('email').value;
+        // Obtém o valor do campo "telefone"
+        var telefone = document.getElementById('telefone').value;
+    
+        // Verifica se todos os campos estão vazios ao mesmo tempo
+        if (nome == "" && email == "" && telefone == "") {
+            alert("Por favor, preencha todos os campos."); // Exibe um alerta para informar que todos os campos estão vazios
+        } else {
+            // Verifica individualmente se o campo "nome" está vazio
+            if(nome == ""){
+                alert("Informe o nome"); // Exibe um alerta caso o campo "nome" esteja vazio
+            }
+    
+            // Verifica individualmente se o campo "email" está vazio
+            if(email == ""){
+                alert("Informe o email"); // Exibe um alerta caso o campo "email" esteja vazio
+            }
+    
+            // Verifica individualmente se o campo "telefone" está vazio
+            if(telefone == ""){
+                alert("Informe o telefone"); // Exibe um alerta caso o campo "telefone" esteja vazio
+            }
+    
+            // Confirma que todos os campos foram preenchidos
+            if(nome != "" && email != "" && telefone != ""){
+                alert("Formulário enviado com sucesso!"); // Exibe um alerta de sucesso informando que o formulário foi enviado
+            }
+        }
+    }
+    </script>
