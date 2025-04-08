@@ -11,6 +11,10 @@ header {
 
 }
 
+.header-menu {
+    display: none;
+}
+
 
 nav {
     text-align: end;
@@ -146,28 +150,6 @@ p {
     background-color: brown;
 }
 
-@media (min-width: 1000px) {
-    .header {
-        background-color: black;
-        display: flex;
-        justify-content: space-between;
-        align-items: center;
-        padding: 20px 50px;
-    }
-
-    .header {
-        .header-menu {
-            display: none;
-        }
-
-        .header-nav {
-            display: block;
-            float: right;
-            border: 0;
-        }
-    }
-}
-
 h1 {
     margin-bottom: 20px;
   }
@@ -209,4 +191,61 @@ font-family: Arial, Helvetica, sans-serif;
     color: white;
     background-color: brown;
   }
+}
+
+@media (max-width: 999px) {
+    .header {
+        flex-direction: column;
+        align-items: flex-start;
+        padding: 20px;
+    }
+
+    .header-menu {
+        display: block;
+        font-size: 1.5em;
+        color: white;
+        cursor: pointer;
+    }
+
+    .header-nav {
+        display: none;
+        width: 100%;
+    }
+
+    .header-nav ul {
+        flex-direction: column;
+        background-color: black;
+        width: 100%;
+        padding: 10px 0;
+    }
+
+    .header-nav ul li {
+        display: block;
+        text-align: center;
+        margin: 10px 0;
+    }
+
+    main {
+        width: 100%;
+        padding: 0 10px;
+    }
+
+    .barra {
+        margin: 40px auto;
+        width: 80%;
+    }
+
+    form {
+        width: 100%;
+    }
+
+    button {
+        margin: 0 auto;
+    }
+
+    .tabela {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
 }
