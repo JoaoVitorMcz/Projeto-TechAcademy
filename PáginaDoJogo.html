@@ -94,7 +94,7 @@
                     <input type="email" id="email" placeholder="Digite seu E-mail" name="email" />
                     <label>Telefone</label>
                     <input type="text" id="telefone" placeholder="(xx)xx-xx-xx-xx" name="telefone" />
-                   <button type="button" id="botao">Enviar</button>
+                    <button type="button" id="botao">Enviar</button>
                 </form>
             </div>
         </section>
@@ -135,38 +135,67 @@
 
 </script>
 <script>
-    // Captura o botão pelo ID e adiciona um evento de clique
-    document.getElementById('botao').onclick = function() {
-        // Obtém o valor do campo "nome"
-        var nome = document.getElementById('nome').value;
-        // Obtém o valor do campo "email"
-        var email = document.getElementById('email').value;
-        // Obtém o valor do campo "telefone"
-        var telefone = document.getElementById('telefone').value;
-    
-        // Verifica se todos os campos estão vazios ao mesmo tempo
-        if (nome == "" && email == "" && telefone == "") {
-            alert("Por favor, preencha todos os campos."); // Exibe um alerta para informar que todos os campos estão vazios
-        } else {
-            // Verifica individualmente se o campo "nome" está vazio
-            if(nome == ""){
-                alert("Informe o nome"); // Exibe um alerta caso o campo "nome" esteja vazio
-            }
-    
-            // Verifica individualmente se o campo "email" está vazio
-            if(email == ""){
-                alert("Informe o email"); // Exibe um alerta caso o campo "email" esteja vazio
-            }
-    
-            // Verifica individualmente se o campo "telefone" está vazio
-            if(telefone == ""){
-                alert("Informe o telefone"); // Exibe um alerta caso o campo "telefone" esteja vazio
-            }
-    
-            // Confirma que todos os campos foram preenchidos
-            if(nome != "" && email != "" && telefone != ""){
-                alert("Formulário enviado com sucesso!"); // Exibe um alerta de sucesso informando que o formulário foi enviado
-            }
+document.getElementById('botao').onclick = function () {
+    var nome = document.getElementById('nome').value;
+    var email = document.getElementById('email').value;
+    var telefone = document.getElementById('telefone').value;
+
+    // Função de validação de e-mail
+    function validarEmail(email) {
+        const regex = /^[^\s@]+@[^\s@]+\.[^\s@]+$/;
+        return regex.test(email);
+    }
+
+    if (nome == "" && email == "" && telefone == "") {
+        alert("Por favor, preencha todos os campos.");
+    } else {
+        if (nome == "") {
+            alert("Informe o nome");
+        }
+
+        if (email == "") {
+            alert("Informe o email");
+        } else if (!validarEmail(email)) {
+            alert("Informe um email válido");
+        }
+
+        if (telefone == "") {
+            alert("Informe o telefone");
+        }
+
+        // Se todos os campos estiverem preenchidos e o e-mail for válido
+        if (nome != "" && email != "" && telefone != "" && validarEmail(email)) {
+            alert("Formulário enviado com sucesso!");
         }
     }
-    </script>
+}
+
+</script>
+<script>    
+
+    // Um evento que controla/ativa após a submissão do form
+    emailForm.addEventListener("submit", function (event) {
+        event.preventDefault();
+
+        const email = emailInput.value;
+
+
+        // Validar email
+        const isValidEmail = validateEmail(email);
+
+        if (isValidEmail) {
+            resultMessage.textContent = "Email válido!";
+            resultMessage.style.color = "green";
+
+        } else {
+ resultMessage.textContent = "Email inválido!";
+            resultMessage.style.color = "red";
+        }
+    });
+    // Função para validar o email
+    const validateEmail = (email) => {
+        // Padrão de TEXTO@TEXTO.TEXTO
+        const regex = /^[^\s]+@[^\s]+\.[^\s]+$/;
+        return regex.test(email);
+    }
+</script>
