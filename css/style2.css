@@ -2,9 +2,6 @@
     margin: 0;
 }
 
-body{
-    font-family: Roboto, Arial, Helvetica, sans-serif;
-}
 body {
     font-family: Roboto, Arial, Helvetica, sans-serif;
     background-color: #05002e;
@@ -65,94 +62,61 @@ nav li a:hover {
     color: white;
     background-color: brown;
 }
-.footer {
+
+footer {
     text-align: center;
     background-color: #000000;
     color: white;
     padding: 30px 0;
-    p {
-        margin: 30px;
-    }
-    a {
-        color: #ccc;
-        font-size: 1.5em;
-        margin: 20px;
-        text-decoration: none;
-    }
-    a:hover {
-        color: white;
-    }
 }
-body {
-    background-color: #05002e;
-    color: rgb(255, 255, 255);
-    font-family: Roboto, Arial;
+
+footer p {
+    margin: 30px;
+}
+
+footer a {
+    color: #ccc;
+    font-size: 1.5em;
+    margin: 20px;
+    text-decoration: none;
+}
+
+footer a:hover {
+    color: white;
 }
 
 main {
     width: 1000px;
     margin: auto;
-
-    .tabela {
-        display: grid;
-        grid-template-columns: 50% 50%;
-        align-items: center;
-
-        .coluna {
-            img {
-                width: 100%;
-                padding-top: 30px;
-                padding-bottom: 30px;
-                border-radius: 50px;
-            }
-        }
-    }
 }
 
-p,
 h1 {
     margin: 30px;
+    font-size: 42px;
+    text-align: center;
 }
 
-h1 {
-    font-size: 42px;
+h2 {
+    text-align: center;
 }
 
 .barra {
-    background-color: rgb(0, 0, 0);
+    background-color: #000000;
     color: white;
     padding: 10px 20px;
     border: none;
     border-radius: 5px;
     text-align: center;
-    text-decoration: none;
-    margin: 0 400px;
-    margin-top: 80px;
+    margin: 50px auto 0;
+    width: fit-content;
 }
 
 p {
     font-size: 20px;
     line-height: 30px;
+    margin: 30px;
+    text-align: center;
 }
-
-.btn2 {
-    background-color: red;
-    color: white;
-    padding: 10px 20px;
-    border: none;
-    border-radius: 5px;
-    cursor: pointer;
-    transition: 0.5s all;
-    text-decoration: none;
-    margin: 0 35px;
-
-}
-
-.btn2:hover {
-    color: white;
-    background-color: brown;
-}
-
 @media (min-width: 1000px) {
     .header {
         background-color: black;
