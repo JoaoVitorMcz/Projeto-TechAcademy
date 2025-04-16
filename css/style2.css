@@ -5,45 +5,49 @@
 body{
     font-family: Roboto, Arial, Helvetica, sans-serif;
 }
+body {
+    font-family: Roboto, Arial, Helvetica, sans-serif;
+    background-color: #05002e;
+    background: linear-gradient(0deg, rgba(10, 0, 89, 1) 0%, rgba(5, 0, 46, 1) 100%);
+    color: rgb(255, 255, 255);
+}
+
 header {
     background-color: black;
-    padding: 10x;
+    padding: 10px;
     display: flex;
     justify-content: space-around;
     align-items: center;
     box-shadow: 0 2px 5px rgba(0, 0, 0, 0.5);
-
 }
 
 .header-menu {
     display: none;
 }
 
-
 nav {
     text-align: end;
+}
 
+nav ul {
+    list-style: none;
+}
 
-    ul {
-        list-style: none;
-    }
+nav li {
+    display: inline-block;
+    font-family: Roboto, Helvetica, sans-serif;
+    text-transform: uppercase;
+    margin: 15px;
+}
 
-    li {
-        display: inline-block;
-        font-family: Roboto, Helvetica, sans-serif;
-        text-transform: uppercase;
-        margin: 15px;
-    }
+nav li a {
+    color: white;
+    text-decoration: none;
+    transition: 0.5s all;
+}
 
-    li a {
-        color: white;
-        text-decoration: none;
-        transition: 0.5s all;
-    }
-
-    li a:hover {
-        color: red;
-    }
+nav li a:hover {
+    color: red;
 }
 
 .btn {
@@ -58,7 +62,7 @@ nav {
 }
 
 .btn:hover {
-    color: rgb(255, 255, 255);
+    color: white;
     background-color: brown;
 }
 .footer {
