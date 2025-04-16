@@ -5,15 +5,17 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Speed Scarf</title>
-    <link href="css/style2.css" rel="stylesheet">
+    <link rel="stylesheet" href="css/style2.css">
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Game Page</title>
 
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100..900;1,100..900&display=swap"
-        rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100..900;1,100..900&display=swap"
+      rel="stylesheet"
+    />
 
     <link rel="shortcut icon" href="images/icone.png">
     <link rel="stylesheet" href="css/all.min.css">
@@ -24,22 +26,24 @@
 </head>
 
 <body>
-
     <header class="header">
         <div class="container">
-            <a href="index.html" title="Home" class="header-logo">
-                <img src="images/LogoJogo.jpg" alt="Logo" title="Logo">
-            </a>
-            <a href="javascript:mostrarMenu()" title="Menu" class="header-menu">
-                <i class="fas fa-bars"></i>
-            </a>
+          <a href="index.html" title="Home" class="header-logo">
+            <img src="images/LogoJogo.jpg" alt="Logo" title="Logo" />
+          </a>
+          <a href="javascript:mostrarMenu()" title="Menu" class="header-menu">
+            <i class="fas fa-bars"></i>
+          </a>
         </div>
-        <nav class="header-nav">
-            <ul data-aos="fade-left">
+        <nav class="header-nav" id="menuMobile">
+          <ul data-aos="fade-left">
                 <li><a href="index.html">Home</a></li>
                 <li><a href="index.html">Sobre</a></li>
                 <li><a href="index.html">Contato</a></li>
-                <li class="btn"><a href="https://games.construct.net/75217/latest" target="_blank">Jogar</a></li>
+                <li class="btn">
+                    <a href="PáginaDoJogo2.html"><i class="fas fa-play"></i> Jogar</a>
+                  </li>
+                </ul>
             </ul>
         </nav>
     </header>
@@ -82,7 +86,6 @@
         </p>
     </div>
 </footer>
-</html>
 
 <script src="js/jquery-1.11.3.min.js"></script>
 <script src="js/aos.js"></script>
@@ -93,3 +96,7 @@
     }
 
 </script>
+<script>
+    AOS.init();
+  </script>
+</html>

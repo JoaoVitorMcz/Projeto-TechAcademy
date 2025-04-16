@@ -154,6 +154,24 @@ p {
     background-color: brown;
 }
 
+.texto-imagem {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: 20px;
+    padding: 30px;
+  }
+  
+  .texto-imagem img {
+    width: 200px;
+    height: auto;
+    border-radius: 20px;
+  }
+  
+  .texto-imagem p {
+    margin: 0;
+  }
+
 #entre {
     margin-bottom: 20px;
     text-align: center;
@@ -263,6 +281,16 @@ font-family: Roboto, Arial, Helvetica, sans-serif;
         width: 90%;
     }
 
+    .texto-imagem {
+        flex-direction: column;
+        text-align: center;
+      }
+    
+      .texto-imagem img {
+        width: 70%;
+      }
+    }
+
     h1, h2, p {
         text-align: center;
     }
@@ -270,4 +298,3 @@ font-family: Roboto, Arial, Helvetica, sans-serif;
     footer img {
         width: 100px;
     }
-}

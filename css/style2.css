@@ -2,13 +2,21 @@
     margin: 0;
 }
 
+body{
+    font-family: Roboto, Arial, Helvetica, sans-serif;
+}
 header {
     background-color: black;
     padding: 10x;
     display: flex;
     justify-content: space-around;
     align-items: center;
-    
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.5);
+
+}
+
+.header-menu {
+    display: none;
 }
 
 
@@ -22,7 +30,7 @@ nav {
 
     li {
         display: inline-block;
-        font-family: Roboto, Arial, Helvetica, sans-serif;
+        font-family: Roboto, Helvetica, sans-serif;
         text-transform: uppercase;
         margin: 15px;
     }
@@ -52,9 +60,6 @@ nav {
 .btn:hover {
     color: rgb(255, 255, 255);
     background-color: brown;
-}
-body {
-    font-family: Roboto, Arial, Helvetica, sans-serif;
 }
 .footer {
     text-align: center;
