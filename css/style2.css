@@ -2,6 +2,15 @@
     margin: 0;
 }
 
+html, body {
+    height: 100%;
+    width: 100%;
+    font-family: sans-serif;
+    line-height: 1.5;
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+  }
+
 body {
     font-family: Roboto, Arial, Helvetica, sans-serif;
     background-color: #05002e;
@@ -85,10 +94,10 @@ footer a:hover {
     color: white;
 }
 
-main {
+/* main {
     width: 1000px;
     margin: auto;
-}
+} */
 
 h1 {
     margin: 30px;
@@ -117,24 +126,63 @@ p {
     margin: 30px;
     text-align: center;
 }
-@media (max-width: 768px) {
-    .header {
-        background-color: black;
-        display: flex;
-        justify-content: space-between;
-        align-items: center;
-        padding: 20px 50px;
-    }
-    .header {
-        .header-menu {
-            display: none;
-        }
 
-        .header-nav {
-            display: block;
-            float: right;
-            border: 0;
-        }
+@media (min-width: 576px) {
+    .main {
+      width: 540px;
+    }
+  }
+  
+  @media (min-width: 768px) {
+    .main {
+      width: 720px;
+    }
+  }
+  
+  @media (min-width: 992px) {
+    .main {
+      width: 960px;
+    }
+  }
+
+@media (max-width: 768px) {
+    header {
+        flex-direction: column;
+        align-items: center;
+    }
+    .header-menu {
+        float: right;
+        display: inline;
+        color: white;
+        font-size: 30px;
+        cursor: pointer;
+        position: absolute;
+        right: 20px;
+        top: 50px;
+    }
+
+    .header-nav {
+        display: none;
+    }
+
+    .header-nav ul {
+        padding: 20px;
+        border-radius: 10px;
+        text-align: center;
+    }
+
+    .header-nav ul li {
+        display: inline-block;
+        margin: 15px 0;
+        padding: 10px;
+    }   
+    
+    iframe {
+        width: 100%;
+        height: 500px;
+        border: none;
+        margin-top: 100px;
+        margin-bottom: 200px;
     }
 }
 
