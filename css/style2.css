@@ -13,9 +13,12 @@ html, body {
 
 body {
     font-family: Roboto, Arial, Helvetica, sans-serif;
-    background-color: #05002e;
-    background: linear-gradient(0deg, rgba(10, 0, 89, 1) 0%, rgba(5, 0, 46, 1) 100%);
+    background-color: #05002e;  
     color: rgb(255, 255, 255);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-wrap: wrap;
 }
 
 header {
@@ -25,10 +28,22 @@ header {
     justify-content: space-around;
     align-items: center;
     box-shadow: 0 2px 5px rgba(0, 0, 0, 0.5);
+    width: 100%;
 }
 
 .header-menu {
     display: none;
+}
+
+.alinhamento {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+}
+
+#banner {
+    width: 100%;
 }
 
 nav {
@@ -77,6 +92,7 @@ footer {
     background-color: #000000;
     color: white;
     padding: 30px 0;
+    width: 100%;
 }
 
 footer p {
@@ -92,6 +108,10 @@ footer a {
 
 footer a:hover {
     color: white;
+}
+
+.largura {
+    width: 100%;
 }
 
 /* main {
